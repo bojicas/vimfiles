@@ -3,7 +3,7 @@
 set nocompatible
 
 "show line numbers
-set number
+"set number
 
 "no toolbar
 set go-=T
@@ -245,10 +245,10 @@ nnoremap <C-L> :nohls<CR><C-L>
 inoremap <C-L> <C-O>:nohls<CR>
 
 "map to bufexplorer
-nnoremap <C-B> :BufExplorer<cr>
+nmap <silent> <Leader>t :BufExplorer<CR>
 
 "map to fuzzy finder text mate stylez
-nnoremap <c-f> :FuzzyFinderTextMate<CR>
+nmap <silent> <Leader>t :FuzzyFinderTextMate<CR>
 
 "map Q to something useful
 noremap Q gq

@@ -3,7 +3,10 @@
 set nocompatible
 
 "show line numbers
-"set number
+set number
+
+"no toolbar
+set go-=T
 
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -218,7 +221,7 @@ if has("gui_running")
         set term=gnome-256color
         colorscheme desert
     else
-        colorscheme railscasts
+        colorscheme railscasts2
         set guitablabel=%M%t
         set lines=40
         set columns=115

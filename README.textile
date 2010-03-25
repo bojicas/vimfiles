@@ -21,6 +21,7 @@ h2. Dependencies
 You will need these dependencies figured out:
 
 * Ruby (for the fuzzy finder plugin)
+* Python (for the ConqueTerm plugin: http://code.google.com/p/conque/)
 * Exuberant Ctags (http://ctags.sourceforge.net/)
 * Ncurses-term (in Linux only)
 
@@ -38,4 +39,4 @@ look for Luis Lavena's latest Ruby Installer (http://rubyforge.org/projects/ruby
 h2. Credits
 
 * Original project and most of the heavy lifting: @scrooloose
-* Hacks and some snippets: @akitaonrails
+* Hacks and some snippets: @akitaonrails, @bojicas

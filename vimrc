@@ -5,6 +5,9 @@ set nocompatible
 "show line numbers
 "set number
 
+"show the dollar sign
+set cpoptions+=$
+
 "no toolbar
 set go-=T
 

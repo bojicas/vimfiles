@@ -5,6 +5,9 @@ set nocompatible
 "show line numbers
 "set number
 
+"set virtualedit
+set virtualedit=all
+
 "show the dollar sign
 set cpoptions+=$
 

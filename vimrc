@@ -3,7 +3,7 @@
 set nocompatible
 
 "show line numbers
-"set number
+set number
 
 "set virtualedit
 set virtualedit=all
@@ -254,7 +254,7 @@ inoremap <C-L> <C-O>:nohls<CR>
 nmap <silent> <Leader>b :BufExplorer<CR>
 
 "map to fuzzy finder text mate stylez
-nmap <silent> <Leader>t :FuzzyFinderTextMate<CR>
+"nmap <silent> <Leader>t :FuzzyFinderTextMate<CR>
 
 "map Q to something useful
 noremap Q gq

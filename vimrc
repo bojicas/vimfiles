@@ -14,6 +14,10 @@ set cpoptions+=$
 "no toolbar
 set go-=T
 
+"suppress Lusty Juggler Ruby warning in vims compiled without
+"--enable-rubyinterp
+let g:LustyJugglerSuppressRubyWarning = 1
+
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 

@@ -260,6 +260,9 @@ nmap <silent> <Leader>b :BufExplorer<CR>
 "map to fuzzy finder text mate stylez
 "nmap <silent> <Leader>t :FuzzyFinderTextMate<CR>
 
+"nmap to CommandTFlush
+nmap <silent> <Leader>f :CommandTFlush<CR>
+
 "map Q to something useful
 noremap Q gq
 

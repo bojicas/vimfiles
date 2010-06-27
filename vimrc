@@ -14,6 +14,15 @@ set cpoptions+=$
 "no toolbar
 set go-=T
 
+"use ack instead of grep
+set grepprg=ack
+
+"set the tag file search order
+set tags=./tags;
+
+"using :Wrap command for soft-wrap
+command! -nargs=* Wrap set wrap linebreak nolist
+
 "suppress Lusty Juggler Ruby warning in vims compiled without
 "--enable-rubyinterp
 let g:LustyJugglerSuppressRubyWarning = 1

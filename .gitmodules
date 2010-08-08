@@ -1,3 +1,12 @@
 [submodule "snippets"]
 	path = snippets
 	url = git://github.com/scrooloose/snipmate-snippets.git
+[submodule "bundle/rails"]
+	path = bundle/rails
+	url = http://github.com/tpope/vim-rails.git
+[submodule "bundle/cucumber"]
+	path = bundle/cucumber
+	url = http://github.com/tpope/vim-cucumber.git
+[submodule "bundle/haml"]
+	path = bundle/haml
+	url = http://github.com/tpope/vim-haml.git

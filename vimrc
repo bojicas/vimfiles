@@ -1,11 +1,10 @@
-"Use pathogen plugin to autoload all plugins from bundle directory
-filetype off
-call pathogen#runtime_append_all_bundles()
-
-
 "Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
 set nocompatible
+
+"Use pathogen plugin to autoload all plugins from bundle directory
+filetype off
+call pathogen#runtime_append_all_bundles()
 
 "show line numbers
 set number
@@ -272,7 +271,7 @@ inoremap <C-L> <C-O>:nohls<CR>
 nmap <silent> <Leader>b :BufExplorer<CR>
 
 "map to fuzzy finder text mate stylez
-"nmap <silent> <Leader>t :FuzzyFinderTextMate<CR>
+nmap <silent> <Leader>t :CommandT<CR>
 
 "nmap to CommandTFlush
 nmap <silent> <Leader>f :CommandTFlush<CR>

@@ -10,17 +10,29 @@ git submodule init
 git submodule update
 </code></pre>
 
+Complete command-t installation:
+<pre><code>
+cd ~/.vim/bundle/command-t/ruby/command-t/
+ruby extconf.rb
+make  
+</code></pre>
+
 Put this in your .vimrc file (in your home folder) along with your personal hacks:
 <pre><code>
 source ~/.vim/vimrc      "linux
 source ~/vimfiles/vimrc  "windows
 </code></pre>
 
+Last step is to generate the help for the installed modules using pathogen style:
+<pre><code>
+call pathogen#helptags()
+</pre></code>    
+
 h2. Dependencies
 
 You will need these dependencies figured out:
 
-* Ruby (for the fuzzy finder plugin)
+* Ruby (for the command-t plugin)
 * Python (for the ConqueTerm plugin: http://code.google.com/p/conque/)
 * Exuberant Ctags (http://ctags.sourceforge.net/)
 * Ncurses-term (in Linux only)

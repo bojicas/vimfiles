@@ -3,9 +3,8 @@
 set nocompatible
 
 "Enable persistent undo, in vim7.3
-"set undofile
-"set undodir=/tmp
-
+set undofile
+set undodir=/tmp
 
 "Use pathogen plugin to autoload all plugins from bundle directory
 filetype off

@@ -32,6 +32,9 @@ set grepprg=ack
 "set the tag file search order
 set tags=./tags;
 
+"enable matchit
+runtime macros/matchit.vim
+
 "using :Wrap command for soft-wrap
 command! -nargs=* Wrap set wrap linebreak nolist
 

@@ -14,6 +14,9 @@ call pathogen#runtime_append_all_bundles()
 "show line numbers
 set number
 
+"change leader key mapping
+let mapleader=";"
+
 "set virtualedit
 set virtualedit=all
 
@@ -212,7 +215,7 @@ set foldmethod=indent   "fold based on indent
 set foldnestmax=3       "deepest fold is 3 levels
 set nofoldenable        "dont fold by default
 
-set wildmode=list:longest   "make cmdline tab completion similar to bash
+set wildmode=full           "use cmdline tab completion
 set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
 
@@ -242,16 +245,16 @@ set ttymouse=xterm2
 set hidden
 
 if has("gui_running")
-		"tell the term has 256 colors
-		set t_Co=256
+    "tell the term has 256 colors
+    set t_Co=256
 
     if has("gui_gnome")
         set term=gnome-256color
-        colorscheme desert
+        colorscheme xoria256
     else
         colorscheme railscasts2
         set guitablabel=%M%t
-        set lines=40
+        set lines=49
         set columns=115
     endif
     if has("gui_mac") || has("gui_macvim")
@@ -259,10 +262,14 @@ if has("gui_running")
     endif
     if has("gui_win32") || has("gui_win32s")
         set guifont=Consolas:h12
-				set enc=utf-8
+        set enc=utf-8
     endif
 else
-		"dont load csapprox if we no gui support - silences an annoying warning
+    if &term =~ "xterm-256color"
+        set t_Co=256
+        colorscheme xoria256
+    endif
+    "dont load csapprox if we no gui support - silences an annoying warning
     let g:CSApprox_loaded = 1
 endif
 
@@ -292,9 +299,9 @@ let g:syntastic_enable_signs=1
 
 "snipmate setup
 try
-  source ~/.vim/snippets/support_functions.vim
+    source ~/.vim/snippets/support_functions.vim
 catch
-  source $HOMEPATH\vimfiles\snippets\support_functions.vim
+    source $HOMEPATH\vimfiles\snippets\support_functions.vim
 endtry
 autocmd vimenter * call s:SetupSnippets()
 function! s:SetupSnippets()

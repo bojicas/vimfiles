@@ -8,7 +8,7 @@ set undodir=/tmp
 
 "Use pathogen plugin to autoload all plugins from bundle directory
 filetype off
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 
 "show line numbers
 set number

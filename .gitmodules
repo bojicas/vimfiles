@@ -73,3 +73,6 @@
 [submodule "bundle/xoria256"]
 	path = bundle/xoria256
 	url = git://github.com/vim-scripts/xoria256.vim.git
+[submodule "bundle/railscasts"]
+	path = bundle/railscasts
+	url = git://github.com/vim-scripts/railscasts.git

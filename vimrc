@@ -277,6 +277,13 @@ endif
 
 nmap <silent> <Leader>q :NERDTreeToggle<CR>
 
+"CoffeeScript mappings
+nmap <silent> <Leader>co :CoffeeCompile<CR>
+vmap <silent> <Leader>co :CoffeeCompile<CR>
+nmap <silent> <Leader>ma :CoffeeMake<CR>
+nmap <silent> <Leader>ru :CoffeeRun<CR>
+vmap <silent> <Leader>ru :CoffeeRun<CR>
+
 "make <c-l> clear the highlight as well as redraw
 nnoremap <C-L> :nohls<CR><C-L>
 inoremap <C-L> <C-O>:nohls<CR>

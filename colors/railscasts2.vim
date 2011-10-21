@@ -34,7 +34,8 @@ hi Visual                    guibg=#5A647E
 hi LineNr                    guibg=#333435 guifg=#777777 gui=NONE
 hi StatusLine                guibg=#414243 gui=NONE
 hi StatusLineNC              guibg=#414243 gui=NONE
-hi VertSplit                 guibg=#414243 gui=NONE
+hi VertSplit                 guibg=#414243 guifg=#414243 gui=NONE
+hi NonText                   guifg=#414243 guibg=#2B2B2B
 
 " Folds
 " -----
@@ -68,7 +69,7 @@ hi Constant                  guifg=#6D9CBE
 
 "rubyClass, rubyModule, rubyDefine
 "def, end, include, etc
-hi Define                    guifg=#CC7833
+hi Define                    guifg=#CC7833 gui=bold
 
 "rubyInterpolation
 hi Delimiter                 guifg=#519F50

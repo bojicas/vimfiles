@@ -76,3 +76,6 @@
 [submodule "bundle/railscasts"]
 	path = bundle/railscasts
 	url = git://github.com/vim-scripts/railscasts.git
+[submodule "bundle/bundle"]
+	path = bundle/bundle
+	url = git://github.com/tpope/vim-bundler.git

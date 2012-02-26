@@ -252,16 +252,16 @@ if has("gui_running")
 
     if has("gui_gnome")
         set term=gnome-256color
-        colorscheme xoria256
+        colorscheme solarized
     else
-        colorscheme railscasts2
+        colorscheme solarized
         set guitablabel=%M%t
         set lines=49
         set columns=115
       endif
     if has("gui_mac") || has("gui_macvim")
         "set guifont=Monaco:h12
-        set guifont=Menlo:h12
+        set guifont=Menlo:h13
         "hide the righthand vertical scrollbar
         set guioptions-=r
         "hide the lefthand vertical scrollbar
@@ -275,7 +275,7 @@ if has("gui_running")
 else
     if &term =~ "xterm-256color"
         set t_Co=256
-        colorscheme xoria256
+        colorscheme solarized
     endif
     "dont load csapprox if we no gui support - silences an annoying warning
     let g:CSApprox_loaded = 1
@@ -366,3 +366,11 @@ function! s:HighlightLongLines(width)
         echomsg "Usage: HighlightLongLines [natural number]"
     endif
 endfunction
+
+"search all tags in current gemset
+autocmd FileType ruby let &l:tags = pathogen#legacyjoin(pathogen#uniq(
+      \ pathogen#split(&tags) +
+      \ map(split($GEM_PATH,':'),'v:val."/gems/*/tags"')))
+
+"set title in terminal mode
+set title

@@ -82,3 +82,6 @@
 [submodule "bundle/jslint"]
 	path = bundle/jslint
 	url = git://github.com/hallettj/jslint.vim.git
+[submodule "bundle/jade"]
+	path = bundle/jade
+	url = git://github.com/henryoswald/JadeVim.git
